@@ -1,0 +1,21 @@
+,dtype,non_null,missing_pct,n_unique,example
+Name,object,3977,0.0,874,The Moving Crib
+Event Type,object,3977,0.0,3,Event
+Description,object,3977,0.0,897,"Experience the magic of Christmas at The Moving Crib, one of Dublin's best-loved"
+Image,object,3977,0.0,917,https://assets-eu-01.kc-usercontent.com:443/aa24ba70-9a12-01ae-259b-7ef588a0b2ef
+Contact URL,object,3977,0.0,839,https://www.stmartin.ie/crib/
+Booking URL,object,3558,10.54,829,https://themovingcrib.ie/
+Contact Phone Number,float64,2192,44.88,141,35318745465.0
+Booking Phone Number,float64,1406,64.65,105,35318745465.0
+Venue Name,object,3977,0.0,252,"The Moving Crib, St Martin Apostolate"
+Address,object,3977,0.0,245,"42 Parnell Square W, Rotunda, Dublin, Dublin"
+County,object,3977,0.0,24,Dublin
+Latitude,float64,3977,0.0,243,53.35268730000001
+Longitude,float64,3977,0.0,243,-6.264666399999999
+Is Free To Visit,object,3977,0.0,2,Yes
+Price,object,3316,16.62,216,20
+Start Date,object,3977,0.0,464,28/11/2026
+End Date,object,3977,0.0,464,28/11/2026
+Start Time,object,15,99.62,4,19:30
+End Time,object,9,99.77,3,22:00
+Recurring Dates,object,3977,0.0,2,Yes

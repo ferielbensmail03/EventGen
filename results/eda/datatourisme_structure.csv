@@ -1,0 +1,18 @@
+,dtype,non_null,missing_pct,n_unique,example
+id,object,73747,0.0,73747,https://data.datatourisme.fr/10/003a993e-a9e6-30ca-b1b0-be9abb32c33a
+label,object,72468,1.73,61853,"{'@value': ""'Arrêtez vos salades!'"", '@language': 'fr'}"
+type,object,73747,0.0,1622,schema:Event/CulturalEvent/EntertainmentAndEvent/PointOfInterest/ShowEvent/urn:r
+theme,object,0,100.0,1,
+startdate,object,0,100.0,1,
+enddate,object,0,100.0,1,
+street,object,0,100.0,1,
+postalcode,object,0,100.0,1,
+city,object,0,100.0,1,
+insee,object,0,100.0,1,
+latitude,object,0,100.0,1,
+longitude,object,0,100.0,1,
+email,object,0,100.0,1,
+web,object,0,100.0,1,
+tel,object,0,100.0,1,
+lastupdate,object,0,100.0,1,
+comment,object,39113,46.96,35752,{'@value': 'Au profit de l\'association RIRE MEDECIN \n\nLa troupe des Gens du c

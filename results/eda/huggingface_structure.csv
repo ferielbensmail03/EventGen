@@ -1,0 +1,20 @@
+,dtype,non_null,missing_pct,n_unique,example
+event_id,object,3000,0.0,3000,EVT-00001
+event_type,object,3000,0.0,10,Tech Summit
+client_industry,object,3000,0.0,8,Retail
+city,object,3000,0.0,8,Petah Tikva
+month,int64,3000,0.0,12,10
+month_name,object,3000,0.0,12,October
+year,int64,3000,0.0,4,2023
+season,object,3000,0.0,4,Fall
+guest_capacity,int64,3000,0.0,14,500
+catering_style,object,3000,0.0,6,Plated Fine Dining
+av_complexity,int64,3000,0.0,5,1
+total_budget_usd,float64,3000,0.0,2090,105500.0
+actual_spend_usd,float64,3000,0.0,2098,103700.0
+margin_pct,float64,3000,0.0,2194,1.71
+vendor_count,int64,3000,0.0,1,7
+vendor_ids_used,object,3000,0.0,3000,"[""VND-00706"", ""VND-01483"", ""VND-02269"", ""VND-03311"", ""VND-04136"", ""VND-05489"", """
+vendor_cost_breakdown,object,3000,0.0,3000,"{""VND-00706"": 44072.5, ""VND-01483"": 19875.83, ""VND-02269"": 17490.73, ""VND-03311"""
+success_rating,float64,3000,0.0,41,3.5
+event_narrative,object,3000,0.0,3000,**Objective:** The primary objective of this tech summit was to foster innovatio

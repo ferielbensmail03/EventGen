@@ -1,0 +1,45 @@
+{
+  "data": {
+    "seed": 42,
+    "train_ratio": 0.8,
+    "val_ratio": 0.1,
+    "test_ratio": 0.1,
+    "min_target_tokens": 8,
+    "max_target_tokens": 60,
+    "max_source_tokens": 40,
+    "min_freq_src": 2,
+    "min_freq_tgt": 3,
+    "max_vocab_src": 20000,
+    "max_vocab_tgt": 20000
+  },
+  "model": {
+    "model_type": "attention",
+    "emb_dim": 128,
+    "hid_dim": 256,
+    "n_layers": 1,
+    "dropout": 0.3,
+    "attn_dim": 256
+  },
+  "train": {
+    "batch_size": 32,
+    "lr": 0.001,
+    "epochs": 30,
+    "teacher_forcing": 0.5,
+    "clip": 1.0,
+    "patience": 4,
+    "lr_patience": 1,
+    "lr_factor": 0.5,
+    "num_workers": 0,
+    "subset": null,
+    "tag": "",
+    "resume": false,
+    "max_minutes": 80.0
+  },
+  "gen": {
+    "max_len": 60,
+    "beam_width": 3,
+    "length_penalty": 0.7,
+    "no_repeat_ngram": 0,
+    "block_unk": true
+  }
+}

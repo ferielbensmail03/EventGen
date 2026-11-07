@@ -1,0 +1,56 @@
+{
+  "source": "Hugging Face eliel2003/events (synthetic event-management data)",
+  "rows": 3000,
+  "columns": [
+    "event_id",
+    "event_type",
+    "client_industry",
+    "city",
+    "month",
+    "month_name",
+    "year",
+    "season",
+    "guest_capacity",
+    "catering_style",
+    "av_complexity",
+    "total_budget_usd",
+    "actual_spend_usd",
+    "margin_pct",
+    "vendor_count",
+    "vendor_ids_used",
+    "vendor_cost_breakdown",
+    "success_rating",
+    "event_narrative"
+  ],
+  "memory_mb": 5.1,
+  "duplicate_rows": 0,
+  "duplicate_ids": 0,
+  "categorical_cardinality": {
+    "event_type": 10,
+    "client_industry": 8,
+    "city": 8,
+    "season": 4,
+    "catering_style": 6
+  },
+  "event_narrative": {
+    "non_null": 3000,
+    "null": 0,
+    "empty": 0,
+    "chars_mean": 799.3,
+    "chars_min": 580,
+    "chars_max": 946,
+    "words_mean": 103.7,
+    "words_median": 104.0,
+    "words_min": 75,
+    "words_max": 119,
+    "very_short_lt_8_words": 0,
+    "duplicate_texts": 0,
+    "with_html_tags": 0,
+    "with_urls": 0,
+    "with_markdown_bold": 2463,
+    "language_share_sample": {
+      "en": 1.0
+    }
+  },
+  "narrative_style": "post-event report (Objective / Execution Highlights / Outcome) in markdown"
+}

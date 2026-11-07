@@ -1,0 +1,65 @@
+{
+  "source": "Events.csv - Irish events listing (URLs point to Irish venues, County column = Irish counties)",
+  "rows": 3977,
+  "columns": [
+    "Name",
+    "Event Type",
+    "Description",
+    "Image",
+    "Contact URL",
+    "Booking URL",
+    "Contact Phone Number",
+    "Booking Phone Number",
+    "Venue Name",
+    "Address",
+    "County",
+    "Latitude",
+    "Longitude",
+    "Is Free To Visit",
+    "Price",
+    "Start Date",
+    "End Date",
+    "Start Time",
+    "End Time",
+    "Recurring Dates"
+  ],
+  "memory_mb": 10.2,
+  "duplicate_rows": 1,
+  "unique_names": 874,
+  "unique_descriptions": 897,
+  "event_type_values": {
+    "Event": 3707,
+    "Festival": 264,
+    "Market": 6
+  },
+  "county_top": {
+    "Dublin": 2970,
+    "Cork": 179,
+    "Kerry": 174,
+    "Waterford": 122,
+    "Louth": 107,
+    "Galway": 76,
+    "Wexford": 60,
+    "Kilkenny": 49
+  },
+  "description": {
+    "non_null": 3977,
+    "null": 0,
+    "empty": 0,
+    "chars_mean": 654.1,
+    "chars_min": 159,
+    "chars_max": 840,
+    "words_mean": 104.7,
+    "words_median": 111.0,
+    "words_min": 26,
+    "words_max": 145,
+    "very_short_lt_8_words": 0,
+    "duplicate_texts": 3080,
+    "with_html_tags": 0,
+    "with_urls": 12,
+    "with_markdown_bold": 8,
+    "language_share_sample": {
+      "en": 1.0
+    }
+  }
+}

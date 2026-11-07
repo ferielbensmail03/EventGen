@@ -1,0 +1,197 @@
+{
+  "source": "DATAtourisme - data.gouv.fr (Licence Ouverte / Etalab 2.0)",
+  "rows": 73747,
+  "columns": [
+    "id",
+    "label",
+    "type",
+    "theme",
+    "startdate",
+    "enddate",
+    "street",
+    "postalcode",
+    "city",
+    "insee",
+    "latitude",
+    "longitude",
+    "email",
+    "web",
+    "tel",
+    "lastupdate",
+    "comment"
+  ],
+  "memory_mb": 81.4,
+  "fully_empty_columns": [
+    "theme",
+    "startdate",
+    "enddate",
+    "street",
+    "postalcode",
+    "city",
+    "insee",
+    "latitude",
+    "longitude",
+    "email",
+    "web",
+    "tel",
+    "lastupdate"
+  ],
+  "duplicate_ids": 0,
+  "corrupted_type_rows": 16456,
+  "title": {
+    "non_null": 72468,
+    "null": 1279,
+    "empty": 0,
+    "chars_mean": 35.3,
+    "chars_min": 1,
+    "chars_max": 201,
+    "words_mean": 5.8,
+    "words_median": 5.0,
+    "words_min": 1,
+    "words_max": 32,
+    "very_short_lt_8_words": 54121,
+    "duplicate_texts": 10616,
+    "with_html_tags": 0,
+    "with_urls": 0,
+    "with_markdown_bold": 8,
+    "language_share_sample": {
+      "fr": 0.516,
+      "unknown": 0.465,
+      "en": 0.019
+    }
+  },
+  "description": {
+    "non_null": 39113,
+    "null": 34634,
+    "empty": 1,
+    "chars_mean": 190.9,
+    "chars_min": 1,
+    "chars_max": 4983,
+    "words_mean": 30.5,
+    "words_median": 23.0,
+    "words_min": 0,
+    "words_max": 759,
+    "very_short_lt_8_words": 4488,
+    "duplicate_texts": 3362,
+    "with_html_tags": 730,
+    "with_urls": 185,
+    "with_markdown_bold": 114,
+    "language_share_sample": {
+      "fr": 0.923,
+      "unknown": 0.073,
+      "en": 0.004
+    }
+  },
+  "description_language_tags": {
+    "fr": 39113,
+    "null": 34634
+  },
+  "top_types": [
+    [
+      "événement culturel",
+      38511
+    ],
+    [
+      "événement sportif",
+      11733
+    ],
+    [
+      "spectacle",
+      10179
+    ],
+    [
+      "événement social",
+      9742
+    ],
+    [
+      "vente",
+      9042
+    ],
+    [
+      "musique",
+      7327
+    ],
+    [
+      "concert",
+      7221
+    ],
+    [
+      "marché",
+      6423
+    ],
+    [
+      "animation locale",
+      6261
+    ],
+    [
+      "jeune public",
+      5217
+    ],
+    [
+      "fête traditionnelle",
+      4940
+    ],
+    [
+      "exposition",
+      4274
+    ],
+    [
+      "théâtre",
+      4254
+    ],
+    [
+      "visite",
+      2960
+    ],
+    [
+      "pratique",
+      2268
+    ],
+    [
+      "stage",
+      2179
+    ],
+    [
+      "conférence",
+      2033
+    ],
+    [
+      "festival",
+      1600
+    ],
+    [
+      "randonnée",
+      1549
+    ],
+    [
+      "compétition sportive",
+      1371
+    ],
+    [
+      "événement professionnel",
+      1313
+    ],
+    [
+      "jeu",
+      1253
+    ],
+    [
+      "projection",
+      1231
+    ],
+    [
+      "lieu de loisirs",
+      959
+    ],
+    [
+      "foire ou salon",
+      908
+    ]
+  ],
+  "description_vocab_sample10k": {
+    "tokens": 362590,
+    "types": 28445,
+    "singletons": 14887,
+    "singleton_pct": 52.3
+  }
+}

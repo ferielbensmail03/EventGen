@@ -1,0 +1,150 @@
+{
+  "cleaning": {
+    "source": "DATAtourisme (data.gouv.fr) - flux evenements",
+    "initial_rows": 73747,
+    "steps": [
+      {
+        "step": "duplicate_event_id",
+        "removed": 0,
+        "remaining": 73747,
+        "reason": "same DATAtourisme URI twice"
+      },
+      {
+        "step": "missing_description",
+        "removed": 34635,
+        "remaining": 39112,
+        "reason": "no target text: cannot be a training pair (never fabricated)"
+      },
+      {
+        "step": "missing_title",
+        "removed": 0,
+        "remaining": 39112,
+        "reason": "title is the essential input field"
+      },
+      {
+        "step": "non_french",
+        "removed": 0,
+        "remaining": 39112,
+        "reason": "single-language (French) model"
+      },
+      {
+        "step": "empty_after_cleaning",
+        "removed": 3,
+        "remaining": 39109,
+        "reason": "description contained only URL / phone / e-mail / tags"
+      },
+      {
+        "step": "description_equals_title",
+        "removed": 443,
+        "remaining": 38666,
+        "reason": "target identical to input: nothing to generate"
+      },
+      {
+        "step": "duplicate_pair",
+        "removed": 1271,
+        "remaining": 37395,
+        "reason": "same (title, description) published twice (recurring dates)"
+      },
+      {
+        "step": "duplicate_description",
+        "removed": 2150,
+        "remaining": 35245,
+        "reason": "identical description shared by different events (boilerplate); one kept to avoid memorisation and leakage"
+      }
+    ],
+    "empty_columns_dropped": [
+      "theme",
+      "startdate",
+      "enddate",
+      "street",
+      "postalcode",
+      "city",
+      "insee",
+      "latitude",
+      "longitude",
+      "email",
+      "web",
+      "tel",
+      "lastupdate"
+    ],
+    "corrupted_type_rows_kept": 6642,
+    "final_rows": 35245
+  },
+  "pairs": {
+    "rows_in": 35245,
+    "steps": [
+      {
+        "step": "too_short_target",
+        "removed": 2617,
+        "reason": "< 8 tokens"
+      },
+      {
+        "step": "no_sentence_boundary_within_max_len",
+        "removed": 132,
+        "reason": "> 60 tokens and no '.!?' to cut at"
+      },
+      {
+        "step": "too_short_after_truncation",
+        "removed": 10,
+        "reason": "< 8 tokens after cut"
+      }
+    ],
+    "validation": {
+      "empty_input": 0,
+      "empty_target": 0,
+      "duplicate_pairs": 36,
+      "duplicate_ids": 0,
+      "target_from_other_event": 0
+    },
+    "rows_out": 32450,
+    "truncated_targets": 3355
+  },
+  "split": {
+    "train": {
+      "rows": 25960,
+      "pct": 80.0
+    },
+    "val": {
+      "rows": 3245,
+      "pct": 10.0,
+      "title_overlap_with_train": 0,
+      "description_overlap_with_train": 0
+    },
+    "test": {
+      "rows": 3245,
+      "pct": 10.0,
+      "title_overlap_with_train": 0,
+      "description_overlap_with_train": 0
+    }
+  },
+  "vocab": {
+    "src": {
+      "size": 8523,
+      "distinct_training_words": 21763,
+      "kept_words": 8519,
+      "min_freq": 2,
+      "max_size": 20000
+    },
+    "tgt": {
+      "size": 14583,
+      "distinct_training_words": 43471,
+      "kept_words": 14579,
+      "min_freq": 3,
+      "max_size": 20000
+    },
+    "coverage": {
+      "train": {
+        "src": 0.9679540846201867,
+        "tgt": 0.955428806967323
+      },
+      "val": {
+        "src": 0.9520603441623582,
+        "tgt": 0.9436286358875191
+      },
+      "test": {
+        "src": 0.9502112309265225,
+        "tgt": 0.9405676505118329
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "data_config": {
+    "seed": 42,
+    "train_ratio": 0.8,
+    "val_ratio": 0.1,
+    "test_ratio": 0.1,
+    "min_target_tokens": 8,
+    "max_target_tokens": 60,
+    "max_source_tokens": 40,
+    "min_freq_src": 2,
+    "min_freq_tgt": 3,
+    "max_vocab_src": 20000,
+    "max_vocab_tgt": 20000
+  },
+  "lowercase": true,
+  "unicode": "NFC + ASCII apostrophes/quotes",
+  "tokenizer": "regex word tokenizer, French elisions split (l' / d' / qu'), punctuation as tokens",
+  "special_tokens": {
+    "<pad>": 0,
+    "<unk>": 1,
+    "<sos>": 2,
+    "<eos>": 3
+  },
+  "input_serialization": "type : <labels> | titre : <title>"
+}
